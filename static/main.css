@@ -1,0 +1,925 @@
+@import url(hamburger.css);
+/* STARTSIDA */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  margin: 0;
+  padding: 0%;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: #011827;
+  display: flex;
+  max-width: 100%;
+}
+
+.headPic {
+  height: 17rem;
+  max-width: 100%;
+}
+
+.myCover {
+  max-width: 100%;
+}
+
+h1 {
+  align-content: center;
+  color: white;
+  display: flex;
+  font-size: 1rem;
+  font-style: bold;
+  font-weight: 700;
+  margin-left: 1rem;
+  margin-top: 1.25rem;
+  width: 20%;
+}
+
+.logo {
+  height: 4rem;
+  margin-top: 1.25rem;
+  margin-left: 1rem;
+  width: 6rem;
+  padding-bottom: 2rem;
+}
+
+.menu {
+  list-style: none;
+  margin-top: -1.25rem;
+}
+
+.playOne,
+.playTwo,
+.story,
+.contact {
+  display: none;
+  list-style: none;
+}
+
+.onlineBtn {
+  display: none;
+}
+
+.btnList {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  z-index: 99;
+}
+
+.onsiteBtn {
+  align-content: center;
+  background-color: #8acfe5;
+  border: none;
+  border-radius: 0.25rem;
+  color: black;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 4rem;
+  margin-bottom: 1.87rem;
+  margin-top: 1.87rem;
+  text-align: center;
+  text-decoration: none;
+  width: 70%;
+}
+
+.onsiteBtn::before {
+  font-family: "Font Awesome 6 Free";
+  margin-right: 0.625rem;
+  font-size: 1.25rem;
+}
+
+.onsiteBtn::before {
+  content: "\f015";
+}
+.mobileOnline {
+  background-color: white;
+  border: none;
+  color: #36769d;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobileOnline::before {
+  font-family: "Font Awesome 6 Free";
+  margin-right: 0.625rem;
+  font-size: 1.25rem;
+}
+
+.mobileOnline::before {
+  content: "\e163";
+}
+
+.userImg {
+  float: left;
+  height: 5rem;
+  margin: 0.31rem;
+  margin-top: 1.56rem;
+  margin-left: 1.6rem;
+  width: 5rem;
+}
+
+.reviewOne {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+  width: 60%;
+  margin-left: 2rem;
+}
+
+.reviewTwo {
+  display: none;
+}
+
+.name {
+  display: flex;
+  font-size: 1.12rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: -1.25rem;
+}
+
+.userImg2 {
+  display: none;
+}
+
+.popular {
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+#top-three {
+  display: flex;
+  gap: 2rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 92vw;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#top-three > * {
+  width: 364px;
+  flex-shrink: 0;
+}
+
+.imageCard {
+  width: 100%;
+  height: 270px;
+  object-fit: fill;
+  display: block;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.roomIcon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.roomIcon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: #fff;
+}
+
+.scroll {
+  display: flex;
+  gap: 1.87rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-right: 1rem;
+}
+
+.roomTitle {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 0.43rem;
+}
+
+.card {
+  background-color: white;
+  border: #011827;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.233);
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+  margin-left: 0.62rem;
+  width: 364px;
+}
+
+.cardTwo {
+  background-color: white;
+  border: #011827;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.233);
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+  margin-left: 0.62rem;
+  width: 364px;
+}
+
+.cardThree {
+  background-color: white;
+  border: #011827;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.233);
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+  margin-left: 0.62rem;
+  width: 364px;
+}
+
+.star {
+  align-items: center;
+  float: left;
+  margin-left: 0.62rem;
+}
+
+.participants {
+  font-size: 0.87rem;
+  font-weight: 400;
+  text-align: right;
+  margin-right: 0.5rem;
+}
+
+.roomInfo {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0.43rem;
+  margin: 0;
+  text-align: justify;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.cardBtn {
+  background-color: #e3170a;
+  border: none;
+  border-radius: 0.4rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3rem;
+  width: 11.2rem;
+}
+
+.onsiteBtnTwo {
+  align-content: center;
+  background-color: #8acfe5;
+  border: none;
+  border-radius: 0.25rem;
+  color: black;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 4rem;
+  margin-bottom: 1.87rem;
+  margin-top: 1.87rem;
+  text-align: center;
+  text-decoration: none;
+  width: 70%;
+}
+
+.onsiteBtnTwo::before {
+  font-family: "Font Awesome 6 Free";
+  margin-right: 0.625rem;
+  font-size: 1.25rem;
+}
+
+.onsiteBtnTwo::before {
+  content: "\f015";
+}
+
+.mobileOnlineTwo {
+  background-color: white;
+  border: none;
+  color: #36769d;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.onlineBtnTwo {
+  display: none;
+}
+
+.mobileOnlineTwo::before {
+  font-family: "Font Awesome 6 Free";
+  margin-right: 0.625rem;
+  font-size: 1.25rem;
+}
+
+.mobileOnlineTwo::before {
+  content: "\e163";
+}
+
+.about {
+  background-color: #011827;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  text-align: center;
+}
+
+.aboutText {
+  color: white;
+  font-style: normal;
+  text-align: center;
+  padding-left: 1.56rem;
+  padding-right: 1.56rem;
+  padding-top: 2.5rem;
+}
+
+.aboutBtn {
+  background-color: #011827;
+  border-color: #8acfe5;
+  border-radius: 0.25rem;
+  color: #8acfe5;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  height: 4.12rem;
+  margin-top: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 70%;
+}
+
+.bookingImg {
+  height: 18.75rem;
+  width: 100%;
+}
+
+.bookingHead {
+  display: flex;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: left;
+}
+
+.bookingText {
+  display: flex;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: left;
+}
+
+.bookingBtn {
+  align-items: center;
+  background-color: #e3170a;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  height: 4.12rem;
+  margin-bottom: 3.12rem;
+  margin-left: 1.5rem;
+  width: 70%;
+}
+
+.challengesImg {
+  height: 18.75rem;
+  width: 100%;
+}
+
+.challengesHead {
+  display: flex;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: left;
+}
+
+.challengesText {
+  display: flex;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: left;
+}
+
+.challengesBtn {
+  align-items: center;
+  background-color: #e3170a;
+  border: none;
+  border-radius: 0.25rem;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  height: 4.12rem;
+  margin-bottom: 3.12rem;
+  margin-left: 1.5rem;
+  width: 70%;
+}
+
+footer {
+  align-content: center;
+  background-color: #011827;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerHead {
+  color: white;
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.footerText {
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-left: 1.875rem;
+  text-align: left;
+  width: 70%;
+}
+
+.siteMap {
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h4 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.12rem;
+  margin-left: 30px;
+}
+
+.siteList {
+  list-style: none;
+}
+
+.socials {
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.socialList {
+  list-style: none;
+}
+
+#top-three.error {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.errorDiv {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  color: #011827;
+  text-shadow: 1px 1px 1px #011827;
+}
+
+@media (min-width: 600px) {
+  html,
+  body {
+    justify-content: center;
+    margin: auto;
+    width: 1280px;
+  }
+
+  .mobileOnline,
+  .mobileOnlineTwo {
+    display: none;
+  }
+
+  h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 2rem;
+    width: auto;
+  }
+
+  .header {
+    background-color: #011827;
+    font-family: "Roboto", sans-serif;
+    height: 12rem;
+    width: auto;
+  }
+
+  .myCover {
+    height: 24rem;
+    object-fit: cover;
+    width: 1280px;
+  }
+
+  .menu {
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    list-style: none;
+    margin-top: -3rem;
+  }
+  .hamburgerMenu {
+    display: none;
+  }
+  .popupMenu {
+    display: none;
+  }
+  .playOne:hover,
+  .playTwo:hover,
+  .story:hover,
+  .contact:hover {
+    color: #8acfe5;
+  }
+
+  .playOne {
+    background-color: #011827;
+    border: none;
+    color: white;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-style: bold;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .playTwo {
+    background-color: #011827;
+    border: none;
+    color: white;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-style: bold;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .story {
+    background-color: #011827;
+    border: none;
+    color: white;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-style: bold;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .contact {
+    background-color: #011827;
+    border: none;
+    color: white;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-style: bold;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .btnsNav {
+    margin-top: -3.8rem;
+    position: absolute;
+    width: 100%;
+  }
+
+  .btnList {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+    width: 1280px;
+  }
+
+  .onlineBtn {
+    align-content: center;
+    background-color: #e3170a;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.12rem;
+    font-weight: 700;
+    height: 3.4rem;
+    text-align: center;
+    text-decoration: none;
+    width: 16rem;
+  }
+
+  .onlineBtn::before {
+    font-family: "Font Awesome 6 Free";
+    margin-right: 0.625rem;
+    font-size: 1.25rem;
+  }
+
+  .onlineBtn::before {
+    content: "\e163";
+  }
+
+  .onsiteBtn {
+    align-content: center;
+    background-color: #8acfe5;
+    border: none;
+    border-radius: 0.25rem;
+    color: black;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.12rem;
+    font-weight: 700;
+    height: 3.4rem;
+    text-align: center;
+    text-decoration: none;
+    width: 16rem;
+  }
+
+  .onsiteBtn::before {
+    font-family: "Font Awesome 6 Free";
+    margin-right: 0.625rem;
+    font-size: 1.25rem;
+  }
+
+  .onsiteBtn::before {
+    content: "\f015";
+  }
+
+  .userImg {
+    display: flex;
+    margin: 5px;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .userImg2 {
+    display: flex;
+    height: 5rem;
+    margin: 5px;
+    width: 5rem;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: row;
+    margin: 5rem;
+  }
+
+  .reviewOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .reviewTwo {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    justify-content: left;
+    width: 60%;
+  }
+
+  .popular {
+    margin-top: -6rem;
+  }
+
+  .scroll {
+    justify-content: center;
+    width: 1280px;
+  }
+
+  #top-three {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  #top-three > * {
+    width: 364px;
+    flex-shrink: 0;
+  }
+
+  .roomTitle {
+    margin-left: 0.6rem;
+  }
+
+  .participants {
+    display: flex;
+    justify-content: end;
+    margin-right: 0.9rem;
+  }
+
+  .roomInfo {
+    margin-left: 0.6rem;
+  }
+
+  .star {
+    padding-left: 0.43rem;
+  }
+
+  .onlineBtnTwo {
+    align-content: center;
+    background-color: #e3170a;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.12rem;
+    font-weight: 700;
+    height: 3.4rem;
+    text-align: center;
+    text-decoration: none;
+    width: 16rem;
+  }
+  .onsiteBtnTwo {
+    display: block;
+    font-size: 1.12rem;
+    height: 3.4rem;
+    width: 16rem;
+  }
+
+  .onlineBtnTwo::before {
+    font-family: "Font Awesome 6 Free";
+    margin-right: 0.625rem;
+    font-size: 1.25rem;
+  }
+
+  .onlineBtnTwo::before {
+    content: "\e163";
+  }
+
+  .about {
+    width: 1280px;
+    margin-bottom: -32px;
+  }
+
+  .aboutText {
+    padding-top: 100px;
+  }
+
+  .aboutBtn {
+    margin-top: 40px;
+  }
+
+  .booking {
+    height: 28rem;
+    margin-bottom: 0;
+  }
+
+  .bookingImg {
+    flex-direction: row;
+    float: left;
+    height: 24rem;
+    margin-right: 4rem;
+    width: 32rem;
+  }
+
+  .bookingHead {
+    text-align: left;
+    padding-top: 3rem;
+    width: 20rem;
+  }
+
+  .bookingText {
+    display: flex;
+    width: 20rem;
+  }
+  .bookingBtn {
+    width: 15rem;
+  }
+  .challengesHead {
+    margin: 0;
+    padding-top: 3rem;
+    width: 20rem;
+  }
+
+  .challenges {
+    margin-left: 3rem;
+    margin-top: 0;
+    height: 28rem;
+  }
+
+  .challengesImg {
+    float: right;
+    height: 24rem;
+    margin: 0;
+    width: 32rem;
+  }
+
+  .challengesText {
+    margin: 1.5rem 0;
+    width: 20rem;
+  }
+  .challengesBtn {
+    margin: 0;
+    width: 15rem;
+  }
+  footer {
+    align-items: center;
+    border: 0;
+    flex-direction: row;
+    font-weight: 400;
+    height: 20rem;
+    margin-top: 5rem;
+    width: auto;
+  }
+
+  .footerAbout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h4 {
+    margin-bottom: 0;
+    margin-left: 4.9rem;
+  }
+
+  .follow {
+    margin-top: -1rem;
+  }
+
+  .footerText {
+    margin-right: 6rem;
+    margin-left: 5rem;
+    width: 20rem;
+  }
+
+  .siteList,
+  .socialList {
+    margin-left: 3rem;
+  }
+
+  #top-three.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .errorDiv {
+    font-size: 25px;
+    color: #011827;
+    text-shadow: 1px 1px 1px #011827;
+  }
+}
